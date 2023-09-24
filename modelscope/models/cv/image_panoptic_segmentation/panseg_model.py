@@ -17,7 +17,7 @@ class SwinLPanopticSegmentation(TorchModel):
         """str -- model file root."""
         super().__init__(model_dir, **kwargs)
 
-        from mmcv.runner import load_checkpoint
+        from mmengine.runner import load_checkpoint
         import mmcv
         from mmdet.models import build_detector
 
